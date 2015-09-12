@@ -1,0 +1,10 @@
+#!/usr/bin/python
+
+# dog command --- concatnate standard input repeatedly
+#  cat [file] | dog [num]
+
+import sys
+
+text = sys.stdin.read()
+for i in range(int(sys.argv[1])):
+  print text,
